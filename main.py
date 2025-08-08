@@ -1,3 +1,5 @@
+from .spirit import Spirits
+
 def game_loop (spirit: Spirits):
     print("Welcome to Spirit Game")
     
