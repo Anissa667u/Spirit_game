@@ -1,16 +1,15 @@
 from fastapi import FastAPI, HTTPException 
 from pydantic import BaseModel
-from .spirit import Spirits 
-from .event import Event
-from .need import Need
+from spirit import Spirits 
+from event import Event
+from need import Need
 
 app = FastAPI(title = 'Spirit Game API', version='0.1.0')
 
 class NeedOut(BaseModel):
     hunger: int 
     happieness: int 
-    sleepiness: int 
-    
+    sleepiness: int     
 class SpiritOut(BaseModel):
     id: int
     name: str 
