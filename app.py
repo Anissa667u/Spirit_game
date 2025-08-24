@@ -1,4 +1,4 @@
-from fastapi import FastAPI 
+''' from fastapi import FastAPI 
 from fastapi import HTTPException
 from pydantic import BaseModel
 from spirit import Spirits 
@@ -71,13 +71,13 @@ class PlayIn(BaseModel):
     # потом добавлю мини игры
     game: str | None = None
 
-'''@app.post("/spirit/play", response_model=SpiritOut)
+@app.post("/spirit/play", response_model=SpiritOut)
 def play(body: PlayIn = PlayIn()):
     # потом посмотрим
     _spirit.play()
-    return to_spirit_out(_spirit) '''
+    return to_spirit_out(_spirit) 
 
 @app.post("/spirit/evolve", response_model=SpiritOut)
 def evolve():
     _spirit.evolve()
-    return to_spirit_out(_spirit)
+    return to_spirit_out(_spirit) '''
